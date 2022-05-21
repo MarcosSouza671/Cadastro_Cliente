@@ -5,11 +5,11 @@ modile.exports = function (app) {
         else
             res.render('usuario/Login',{ mensagemLogin: null });
     })
-    app.post('/login/executar', (req, res) =>{
-        if( req.body.nome === "Marcos" && req.body.senha === "123456");
-            res.render('/lista/usuario', { mensagem: 'cadastrado' });
+    app.post('/login/executar', (req, res) => {
+        if( req.body.nome === "Marcos" && req.body.senha === "123456")
+            res.render('/lista/usuario', { mensagem: 'cadastrado'});
         else
-            res.render('/login/?fail=true');    
+            res.render('/login/?fail=true');
     });
     app.get("/cadastro", function(req, res){
         if (req.query.fail)
