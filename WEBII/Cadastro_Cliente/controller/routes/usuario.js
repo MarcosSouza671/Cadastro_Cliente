@@ -85,4 +85,4 @@ export default function usuario(app){
             res.render('login/?fail=true');
         }
     })
-}
+} 
